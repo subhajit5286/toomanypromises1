@@ -56,6 +56,7 @@ Promise.all([createBlog({title:'Blog3'}),userLastActivity()])
  .then(()=>{
     deleteBlog()
     .then(()=>{
+        console.log('After Deletion ')
         printBlogs();
     })
     .catch((err)=>{
